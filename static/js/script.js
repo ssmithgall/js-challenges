@@ -14,3 +14,15 @@ function ageInDays() {
 function reset() {
     document.getElementById('ageInDays').remove();
 }
+
+//Challenge 2
+function generatePic() {
+    let image = document.createElement('img');
+    let div = document.getElementById('flex-pic-gen');
+    image.src = "https://picsum.photos/200/300?random=1";
+    div.appendChild(image);
+}
+
+function resetPic() {
+    document.getElementById('flex-pic-gen').remove();
+}
